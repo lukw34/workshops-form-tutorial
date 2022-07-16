@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Registration Form</title>
+</head>
+<body>
+    <form action="/form.php" method="GET">
+        <fieldset>
+            <legend>Personal information</legend>
+            <p>
+                <label for="firstName">First Name</label>
+                <input type="text" name="firstName" id="firstName"  placeholder="First Name" id="firstName" required>
+            </p>
+            <p>
+                <label for="lastName">Last Name</label>
+                <input type="text" name="lastName" id="lastName" placeholder="Last Name" required>
+            </p>
+            <p>
+                <label for="age">Age</label>
+                <input type="number" name="age" id="age" min="0">
+            </p>
+            <p>
+                <label for="birthDate">Birth Date</label>
+                <input type="date" name="birthDate" id="birthDate">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Login information</legend>
+            <p>
+                <label for="userEmail">E-mail</label>
+                <input type="email" name="userEmail" id="userEmail" required>
+            </p>
+            <p>
+                <label for="userPassword">Password</label>
+                <input type="password" name="userPassword" id="userPassword" required minlength="8">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Course expectations</legend>
+            <p>
+                <input type="radio" name="skillHtml" id="skillHtml" value="html">
+                <label for="skillHtml">HTML</label>
+            </p>
+            <p>
+                <input type="radio" name="skillCss" id="skillCss" value="css">
+                <label for="skillCss">HTML</label>
+            </p>
+            <p>
+                <input type="radio" name="skillJS" id="skillJS" value="js">
+                <label for="skillJS">Java Script</label>
+            </p>
+            <p>
+                <label for="expectation">What is your expectations from the course ?</label>
+            </p>
+            <p>
+                <textarea name="expectations" rows="4" cols="50"></textarea>
+            </p>
+        </fieldset>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+</body>
+</html>
